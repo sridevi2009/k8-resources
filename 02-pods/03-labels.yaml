@@ -1,0 +1,14 @@
+apiversion: v1
+kind: pod
+metadata: 
+ name: label-demo
+ labels:
+  course: DevOps
+  Trainer: "sivakumarReddy"
+spec:
+# list of containers
+  containers:
+  - name: hello-pod
+    image: nginx
+    ports:
+    - containerport: 80   

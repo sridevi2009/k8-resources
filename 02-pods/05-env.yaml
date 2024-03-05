@@ -1,0 +1,16 @@
+apiversion: v1
+kind: pod
+metadata:
+  name: envar-demo
+  labels:
+    purpose: demonstrate-envars
+spec: 
+ # list of containers
+  containers:
+  - name: envar-demo-container
+    image: nginx
+    env:
+    - name: DEMO_GREETING
+      value: "Hello from the environment"
+    - name: DEMO_FAREWELL 
+      value: "such a sweet sorrow"      

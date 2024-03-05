@@ -1,0 +1,14 @@
+apiversion: v1
+kind: pod
+metadata:
+  name: multi-container
+spec: 
+# list of containers
+  containers: 
+  - name: nginx
+    image: nginx
+    ports: 
+    - containerport: 80
+  - name: almalinux
+    image: almalinux:8
+    command: ["sleep","300"]    
