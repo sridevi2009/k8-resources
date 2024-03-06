@@ -17,7 +17,7 @@ spec:
           name: devops-config
           key: course
     - name: trainer # this name can be anyting
-    valueFrom:
+      valueFrom:
       configMapKeyRef:
        name: devops-config
        key: trainer
