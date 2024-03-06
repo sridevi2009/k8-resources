@@ -13,12 +13,12 @@ spec:
     env:
     - name: course # this name can be anything
       valueFrom:
-        ConfigMapKeyRef:
+        configMapKeyRef:
           name: devops-config
           key: course
     - name: trainer # this name can be anyting
     valueFrom:
-      ConfigMapKeyRef:
+      configMapKeyRef:
        name: devops-config
        key: trainer
 
