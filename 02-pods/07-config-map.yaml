@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: Configmap
+metadata: 
+  name: devops-config
+data:
+  course: DevOps
+  trainer: "SivakumarReddy"  

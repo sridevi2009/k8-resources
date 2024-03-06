@@ -1,0 +1,25 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: config-pod
+  namespace: roboshop
+spec:
+# list of containers
+  containers:
+  - name: config-pod
+    image: nginx
+    ports:
+    - containerPort: 80 
+    env:
+    - name: course # this name can be anything
+      valueFrom:
+        ConfigMapKeyRef:
+          name: devops-config
+          key: course
+    - name: trainer # this name can be anyting
+    valueFrom:
+      ConfigMapKeyRef:
+       name: devops-config
+       key: trainer
+
+         
