@@ -23,7 +23,7 @@ spec:
           key: trainer
 ---          
 apiVersion: v1
-kind: pod
+kind: Pod
 metadata:
   name: config-pod-1
 spec:
