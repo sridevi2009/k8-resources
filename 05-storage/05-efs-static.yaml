@@ -11,7 +11,7 @@ spec:
   storageClassName: ""
   persistentVOlumeReclaimPolicy: Retain    
   csi:
-    driver: ebs.csi.aws.com
+    driver: efs.csi.aws.com
     volumeHandle: fs-095eb66f50e3452e1
 ---
 apiVersion: v1
