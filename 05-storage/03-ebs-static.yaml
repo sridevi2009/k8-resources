@@ -37,7 +37,7 @@ spec:
     image: nginx
     volumeMounts:
     - name: nginx-data
-      mountpath: /usr/share/nginx/html
+      mountPath: /usr/share/nginx/html
   nodeSelector:
     zone: 1b    
   volumes:
