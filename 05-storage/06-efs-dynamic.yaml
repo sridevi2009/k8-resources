@@ -45,7 +45,7 @@ spec:
   selector:
     demo: efs-fynamic
   ports:
-  - ptotocol: TCP
+  - protocol: TCP
     port: 80
     targetPort: 80  
 
